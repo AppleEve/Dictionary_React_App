@@ -1,9 +1,13 @@
 import "./App.css";
+import DictionarySearch from "./DictionarySearch";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Hello</header>
+      <div className="component">
+        <header className="App-header">Dictionary</header>
+        <DictionarySearch />
+      </div>
     </div>
   );
 }
