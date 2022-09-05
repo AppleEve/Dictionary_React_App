@@ -1,12 +1,21 @@
 import "./App.css";
 import DictionarySearch from "./DictionarySearch";
+import book from "./book.jpg";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        backgroundImage: `url(${book})`,
+        backgroundSize: "100%",
+        maxWidth: "90%",
+      }}
+    >
       <div className="component">
         <header className="App-header">Dictionary</header>
         <DictionarySearch />
+
         <footer>
           The app was coded by{" "}
           <a

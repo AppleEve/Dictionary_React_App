@@ -1,6 +1,7 @@
 import React from "react";
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
+import "./Results.css";
 
 export default function Results(props) {
   console.log(props);
@@ -25,6 +26,10 @@ export default function Results(props) {
       </div>
     );
   } else {
-    return null;
+    return (
+      <div className="emptyDiv">
+        <br />
+      </div>
+    );
   }
 }

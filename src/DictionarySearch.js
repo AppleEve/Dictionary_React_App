@@ -23,8 +23,12 @@ export default function DictionarySearch() {
 
   return (
     <div className="DictionarySearch">
-      <form onSubmit={handleSubmit}>
-        <input type="search" onChange={handleChange} />
+      <form className="form" onSubmit={handleSubmit}>
+        <input
+          type="search"
+          placeholder="ex. apple, book, codding..."
+          onChange={handleChange}
+        />
       </form>
       <Results results={results} />
     </div>

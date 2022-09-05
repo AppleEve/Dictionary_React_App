@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Howl, Howler } from "howler";
+import "./AudioPlayer.css";
 
 class AudioPlayer extends Component {
   SoundPlay = (src) => {
@@ -9,7 +10,10 @@ class AudioPlayer extends Component {
 
   RenderButtonAndSound = () => {
     return (
-      <button onClick={() => this.SoundPlay(this.props.audio)}>
+      <button
+        className="playButton"
+        onClick={() => this.SoundPlay(this.props.audio)}
+      >
         {" "}
         <i className="fa-regular fa-circle-play"></i>{" "}
       </button>
@@ -18,7 +22,7 @@ class AudioPlayer extends Component {
 
   render() {
     Howler.volume(1.0);
-    return <div className="Audio">{this.RenderButtonAndSound()}</div>;
+    return <span className="Audio">{this.RenderButtonAndSound()}</span>;
   }
 }
 
