@@ -1,11 +1,52 @@
 .Results {
   margin: 15px;
+  height: 400px;
+  overflow: auto;
+  scrollbar-color: blue;
+  scrollbar-width: thin;
+  font-size: 13px;
 }
 
 .Results h2 {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .emptyDiv {
-  padding-top: 360px;
+  padding-top: 395px;
+}
+
+.phonetics-button {
+  color: white;
+  background-color: rgb(150, 247, 79);
+  border: 2px solid white;
+  padding: 6px 8px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.phonetics-button:hover {
+  color: rgb(150, 247, 79);
+  background-color: white;
+  border-color: rgb(150, 247, 79);
+}
+
+.card {
+  border: none;
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+.definition-button {
+  color: white;
+  background-color: rgb(243, 215, 98);
+  border: 2px solid white;
+  padding: 6px 8px;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.definition-button:hover {
+  color: rgb(243, 215, 98);
+  background-color: white;
+  border-color: rgb(243, 215, 98);
 }

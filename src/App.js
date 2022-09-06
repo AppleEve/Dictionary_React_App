@@ -9,7 +9,9 @@ function App() {
       style={{
         backgroundImage: `url(${book})`,
         backgroundSize: "100%",
-        maxWidth: "90%",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+        maxWidth: "100%",
       }}
     >
       <div className="component">
