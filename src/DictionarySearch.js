@@ -26,7 +26,7 @@ export default function DictionarySearch() {
       <form className="form" onSubmit={handleSubmit}>
         <input
           type="search"
-          placeholder="ex. apple, book, codding..."
+          placeholder="ex. apple, book, coding..."
           onChange={handleChange}
         />
       </form>
