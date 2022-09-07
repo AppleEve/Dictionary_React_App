@@ -1,13 +1,14 @@
 import "./App.css";
 import DictionarySearch from "./DictionarySearch";
-import book from "./book.jpg";
+import background from "./background.jpg";
+import book from "./books.png";
 
 function App() {
   return (
     <div
       className="App"
       style={{
-        backgroundImage: `url(${book})`,
+        backgroundImage: `url(${background})`,
         backgroundSize: "100%",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
@@ -36,6 +37,7 @@ function App() {
             open-sourced.
           </a>
         </footer>
+        <img className="books" src={book} />
       </div>
     </div>
   );

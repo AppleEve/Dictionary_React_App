@@ -25,3 +25,9 @@
 .App .bookImage {
   max-width: 600px;
 }
+
+.App .books {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
