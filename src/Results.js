@@ -8,40 +8,27 @@ export default function Results(props) {
   if (props.results) {
     return (
       <div className="Results">
-        <h2>{props.results.word}</h2>
+        <span className="word">
+          <strong>{props.results.word}</strong>
+        </span>
 
         {props.results.phonetics.map(function (phonetic, index) {
           return (
-            <div key={index}>
+            <span key={index}>
               <Phonetic phonetic={phonetic} />
-            </div>
+            </span>
           );
         })}
         <br />
-        <p>
-          <a
-            className="definition-button"
-            data-bs-toggle="collapse"
-            href="#collapseMeanings"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseMeanings"
-          >
-            Definitions
-          </a>
-        </p>
+        <br />
 
-        <div className="collapse" id="collapseMeanings">
-          <div className="card card-body">
-            {props.results.meanings.map(function (meaning, index) {
-              return (
-                <div key={index}>
-                  <Meaning meaning={meaning} />
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        {props.results.meanings.map(function (meaning, index) {
+          return (
+            <div key={index}>
+              <Meaning meaning={meaning} />
+            </div>
+          );
+        })}
       </div>
     );
   } else {

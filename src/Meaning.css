@@ -1,3 +1,8 @@
 .Meaning {
   background-color: rgb(255, 255, 255, 0.1);
 }
+
+.Meaning h4 {
+  color: #e8d454;
+  font-size: 20px;
+}
