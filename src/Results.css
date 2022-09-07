@@ -2,8 +2,8 @@
   margin: 15px;
   height: 400px;
   overflow: auto;
-
   font-size: 13px;
+  text-align: justify;
 }
 
 .Results .word {
