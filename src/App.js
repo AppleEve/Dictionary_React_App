@@ -37,7 +37,7 @@ function App() {
             open-sourced.
           </a>
         </footer>
-        <img className="books" src={book} />
+        <img className="books" src={book} alt="books" />
       </div>
     </div>
   );

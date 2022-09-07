@@ -6,3 +6,17 @@
   color: #e8d454;
   font-size: 20px;
 }
+
+.Meaning .definitions {
+  padding: 10px;
+}
+
+.Meaning .example-button {
+  color: rgb(187, 127, 227);
+  text-decoration: none;
+}
+
+.examples {
+  color: rgb(187, 127, 227);
+  margin: 0px;
+}

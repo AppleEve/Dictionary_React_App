@@ -12,26 +12,25 @@ export default function Meaning(props) {
         let name = `collapseMeaning${index}`;
         let href = `#${name}`;
         return (
-          <div key={index}>
+          <div className="definitions" key={index}>
             <div>
-              {definition.definition}
+              {index + 1}. {definition.definition}
               <br />
-
+              <br />
               <div>
                 <a
-                  className="btn btn-primary"
+                  className="example-button"
                   data-bs-toggle="collapse"
                   href={href}
                   role="button"
                   aria-expanded="false"
                   aria-controls={name}
                 >
-                  Example
+                  See example
                 </a>
               </div>
-
               <div className="collapse" id={name}>
-                <div className="card card-body">
+                <div className="examples card card-body">
                   <em>{definition.example}</em>
                 </div>
               </div>
