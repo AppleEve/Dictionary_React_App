@@ -1,6 +1,7 @@
 button {
   display: inline;
-  color: black;
+  color: rgb(250, 110, 110);
   background-color: white;
   border: none;
+  margin-left: 15px;
 }

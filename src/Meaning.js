@@ -15,10 +15,9 @@ export default function Meaning(props) {
             <div>
               {index + 1}. {definition.definition}
               <br />
-              <br />
             </div>
             <Example example={definition.example} index={index} />
-            <br />
+
             <Synonyms synonyms={definition.synonyms} index={index} />
           </div>
         );

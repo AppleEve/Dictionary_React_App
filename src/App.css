@@ -13,7 +13,7 @@
 }
 
 .App header {
-  padding: 15px;
+  padding-bottom: 15px;
   font-size: 40px;
 }
 
@@ -30,4 +30,5 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
+  max-width: 400px;
 }

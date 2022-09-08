@@ -1,6 +1,14 @@
+.Example {
+  margin: 10px 0;
+}
+
 .example-button {
   color: rgb(187, 127, 227);
   text-decoration: none;
+}
+
+.example-button:hover {
+  color: rgb(126, 87, 152);
 }
 
 .examples {
