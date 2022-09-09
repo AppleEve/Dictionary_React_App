@@ -16,7 +16,7 @@ export default function Example(props) {
             aria-expanded="false"
             aria-controls={name}
           >
-            See example
+            <strong>See example</strong>
           </a>
         </div>
         <div className="collapse" id={name}>

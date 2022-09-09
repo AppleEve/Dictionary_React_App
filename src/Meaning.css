@@ -5,18 +5,18 @@
 .Meaning h4 {
   color: #e8d454;
   font-size: 20px;
+  margin-top: 10px;
 }
 
 .Meaning .definitions {
   padding: 10px;
 }
 
-.Meaning .example-button {
-  color: rgb(187, 127, 227);
-  text-decoration: none;
-}
-
-.examples {
-  color: rgb(187, 127, 227);
-  margin: 0px;
+.clamp {
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
 }

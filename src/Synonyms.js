@@ -2,7 +2,6 @@ import React from "react";
 import "./Synonyms.css";
 
 export default function Synonyms(props) {
-  console.log(props.index);
   let name = `collapseSynonym${props.index}`;
   let href = `#${name}`;
   if (props.synonyms.length > 0) {
@@ -17,7 +16,7 @@ export default function Synonyms(props) {
             aria-expanded="false"
             aria-controls={name}
           >
-            See synonyms
+            <strong>See synonyms</strong>
           </a>
         </div>
         <div className="collapse" id={name}>
@@ -25,12 +24,10 @@ export default function Synonyms(props) {
             <ul>
               {props.synonyms.map(function (synonym, index) {
                 return (
-                  <em>
-                    <li className="synonym" key={index}>
-                      {synonym}
-                      {"  "}
-                    </li>
-                  </em>
+                  <li className="synonym" key={index}>
+                    <em>{synonym}</em>
+                    {"  "}
+                  </li>
                 );
               })}
             </ul>
