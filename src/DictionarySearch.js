@@ -22,7 +22,7 @@ export default function DictionarySearch() {
     axios.get(dictionaryApiUrl).then(handleDictionaryResponse);
 
     let pexelsApiKey = `563492ad6f91700001000001d2a9b48974694e518bae4b0361a144dd`;
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=16`;
     axios
       .get(pexelsApiUrl, {
         headers: { Authorization: `Bearer ${pexelsApiKey}` },
