@@ -9,7 +9,7 @@
   max-width: 1000px;
   max-height: 700px;
   margin: 0 auto;
-  margin-right: 400px;
+  margin-right: 36%;
 }
 
 .App header {
@@ -20,8 +20,11 @@
 .App footer {
   font-size: 11px;
   position: fixed;
-  bottom: 10px;
+  bottom: 0px;
   right: 30px;
+  background-color: white;
+  width: 100%;
+  padding: 15px 0;
 }
 
 .App .bookImage {
@@ -29,8 +32,42 @@
 }
 
 .App .books {
-  position: fixed;
+  position: absolute;
   bottom: 30px;
   right: 30px;
-  max-width: 400px;
+  max-width: 35%;
+}
+
+@media (max-width: 912px) {
+  .App .component {
+    margin-right: 10px;
+  }
+
+  .App .books {
+    top: 20px;
+    right: 20px;
+    max-width: 18%;
+  }
+}
+
+@media (max-width: 576px) {
+  .App header {
+    font-size: 30px;
+  }
+
+  .App .component {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .App .books {
+    top: 10px;
+    right: 20px;
+    max-width: 12%;
+  }
+
+  .App footer {
+    font-size: 8px;
+    right: 0;
+  }
 }

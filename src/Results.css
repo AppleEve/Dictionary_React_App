@@ -1,6 +1,6 @@
 .Results {
   margin: 15px;
-  height: 250px;
+  height: 350px;
   overflow: auto;
   font-size: 13px;
   text-align: justify;
@@ -67,4 +67,22 @@
   color: rgb(243, 215, 98);
   background-color: white;
   border-color: rgb(243, 215, 98);
+}
+
+@media (max-height: 600px) {
+  .Results {
+    height: 250px;
+  }
+}
+@media (max-width: 912px) {
+  .Results {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .Result .word {
+    margin-left: 0px;
+    font-size: 20px;
+  }
 }
