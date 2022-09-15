@@ -3,6 +3,7 @@ import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 import "./Results.css";
 import Photos from "./Photos";
+import book from "./books.png";
 
 export default function Results(props) {
   if (props.results) {
@@ -36,6 +37,7 @@ export default function Results(props) {
   } else {
     return (
       <div className="emptyDiv">
+        <img src={book} className="bookImage d-block d-lg-none" alt="book" />
         <br />
       </div>
     );

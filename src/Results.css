@@ -30,7 +30,12 @@
 }
 
 .emptyDiv {
-  padding-top: 395px;
+  padding-top: 50px;
+}
+
+.emptyDiv .bookImage {
+  max-width: 30%;
+  margin: 0 auto;
 }
 
 .phonetics-button {

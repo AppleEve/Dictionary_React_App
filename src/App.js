@@ -9,10 +9,9 @@ function App() {
       className="App"
       style={{
         backgroundImage: `url(${background})`,
-        backgroundSize: "100%",
-        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        height: "100%",
         backgroundAttachment: "fixed",
-        maxWidth: "100%",
       }}
     >
       <div className="component">
@@ -37,7 +36,7 @@ function App() {
             open-sourced.
           </a>
         </footer>
-        <img className="books" src={book} alt="books" />
+        <img className="books d-none d-lg-block" src={book} alt="books" />
       </div>
     </div>
   );
